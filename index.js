@@ -32,7 +32,7 @@ db.once('open', () => console.log('Connected to Mongodb'))
 app.use('/api', indexRouter)
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server listening on port 3000")
 });
 
