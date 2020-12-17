@@ -1,6 +1,6 @@
 # Example (Frontend Javascript)
 1. Login -
-fetch('localhost:3000/api/login', {
+fetch('https://unify-api-server.herokuapp.com/api/login', {
     method: 'POST',
     body: { 
         "email" : "patelsakshi1998@gmail.com",
@@ -11,7 +11,7 @@ fetch('localhost:3000/api/login', {
 })
 
 2. Universities -
-fetch('localhost:3000/api/universities', {
+fetch('https://unify-api-server.herokuapp.com/api/universities', {
     method: 'GET',
     headers: {
     'auth-token': '<TOKEN_RECIEVED_FROM_LOGIN>'
@@ -22,14 +22,14 @@ fetch('localhost:3000/api/universities', {
 
 # Routes 
 
-1. POST localhost:3000/api/login
+1. POST https://unify-api-server.herokuapp.com/api/login
 Request Body  
 {
  	"email" : "patelsakshi1998@gmail.com",
 	"password" : "iamdumb"
 }
 
-2. POST localhost:3000/api/users/register
+2. POST https://unify-api-server.herokuapp.com/api/users/register
 Request Body
 {
  	"name": "Sakshi Patel",
@@ -37,12 +37,12 @@ Request Body
 	"password" : "iamdumb"
 }
 
-3. GET localhost:3000/api/universities
+3. GET https://unify-api-server.herokuapp.com/api/universities
 Headers {
     "auth-token" : <TOKEN_RECEIVED_FROM_LOGIN>
 }
 
-4. GET localhost:3000/api/users/
+4. GET https://unify-api-server.herokuapp.com/api/users/
 Headers {
     "auth-token" : <TOKEN_RECEIVED_FROM_LOGIN>
 }

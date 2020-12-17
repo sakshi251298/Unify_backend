@@ -8,9 +8,9 @@ router.post('/', async (req, res) => {
         const userexist = await  User.findOne({ 'email': req.body.email})
 
         if (req.body.password === userexist.password) {
-            
-            const token = jwt.sign({ _id: userexist._id }, '5mnfvco4@9090')
+            const token = jwt.sign({ _id: userexist._id }, 'sak@h3i4rdW2w4')
             res.header('auth-token', token).send(go(true, "Logged In", {
+                "user" : userexist,
                 "Token" : token
             }))
         }
