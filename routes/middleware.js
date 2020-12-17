@@ -7,7 +7,7 @@ async function verifyauth(req, res, next) {
     }
     
     try {
-        const verified = await jwt.verify(token, '5mnfvco4@9090')
+        const verified = await jwt.verify(token, 'sak@h3i4rdW2w4')
         req.user = verified
         next()
     } catch {
