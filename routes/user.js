@@ -29,7 +29,13 @@ router.post('/register', async (req, res) => {
     const user = new userdata({
         name: req.body.name,
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        hscdipstream: req.body.hscdipstream,
+        degree: req.body.degree,
+        degreestream: req.body.degreestream,
+        in_sub: req.body.in_sub,
+        in_sports: req.body.in_sports,
+        in_loc: req.body.in_loc,
     })
     // console.log(user);
     try {
