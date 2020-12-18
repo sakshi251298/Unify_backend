@@ -12,6 +12,30 @@ const users = new mongoose.Schema({
     password: {
         type: String, 
         required: true
+    }, 
+    hscdipstream: {
+        type: String, 
+        required: true
+    }, 
+    degree: {
+        type: String, 
+        required: true
+    }, 
+    degreestream: {
+        type: String, 
+        required: true
+    }, 
+    in_sub: {
+        type: String, 
+        required: true
+    }, 
+    in_sports: {
+        type: String, 
+        required: true
+    }, 
+    in_loc: {
+        type: String, 
+        required: true
     }
 })
 
