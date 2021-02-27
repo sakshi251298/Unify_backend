@@ -39,7 +39,7 @@ router.post('/register', async (req, res) => {
         in_gre: req.body.in_gre,
         in_ilts: req.body.in_ilts,
     })
-    // console.log(user);
+    console.log(user);
     try {
         
         const newUser = await user.save()
