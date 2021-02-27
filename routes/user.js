@@ -34,8 +34,10 @@ router.post('/register', async (req, res) => {
         degree: req.body.degree,
         degreestream: req.body.degreestream,
         in_sub: req.body.in_sub,
-        in_sports: req.body.in_sports,
         in_loc: req.body.in_loc,
+        in_cgpa: req.body.in_cgpa,
+        in_gre: req.body.in_gre,
+        in_ilts: req.body.in_ilts,
     })
     // console.log(user);
     try {

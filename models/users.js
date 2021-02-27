@@ -29,11 +29,20 @@ const users = new mongoose.Schema({
         type: String, 
         required: true
     }, 
-    in_sports: {
+   
+    in_loc: {
+        type: String, 
+        required: true
+    },
+    in_cgpa: {
         type: String, 
         required: true
     }, 
-    in_loc: {
+    in_gre: {
+        type: String, 
+        required: true
+    }, 
+    in_ilts: {
         type: String, 
         required: true
     }
