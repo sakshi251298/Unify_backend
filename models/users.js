@@ -45,7 +45,7 @@ const users = new mongoose.Schema({
     in_ilts: {
         type: String, 
         required: true
-    }
+    },
 })
 
 users.pre('find', (next) => {
